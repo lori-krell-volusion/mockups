@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+	
+	<!-- App Help - 1 page with side nav - do not compile!
+	
+	This document template is for App Help, 1 page, encapsulated content.
+	Remove the xml tag line 1 and madcap tag in the html when saving and reusing
+	this template for 1 page content. 
+	
+	Ignore Madcap error issues with the javascript.
+	This file lives with the css and logo image file in the folder.
+	-->
+	<head><title>App Name</title>
+		
+		<meta name="author" content="Mozu" />
+		<meta name="description" content="Description of doc." />
+		<meta name="keywords" content="Mozu" />
+		<link rel="shortcut icon" href="http://www.mozu.com/favicon.ico" />
+		
+		<!-- Required for Scrollspy -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>  
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js"></script>  
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js"></script>  
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		
+		<!-- Mozu CSS developed by Mozu Docs -->
+		<link href="mozu-bootswatch.css" rel="stylesheet" type="text/css" />	
+		
+		<!-- Scrollspy active link script -->
+		<script>
+
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		
+		</script>
+		
+		<!-- Anchor Ease Script -->
+		<script>
+
+			$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+			&& location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			$('html,body').animate({
+			scrollTop: target.offset().top - 75 //offsets for fixed header
+			}, 1000);
+			return false;
+			}
+			}
+			});
+			//Executed on page load with URL containing an anchor tag.
+			if($(location.href.split("#")[1])) {
+			var target = $('#'+location.href.split("#")[1]);
+			if (target.length) {
+			$('html,body').animate({
+			scrollTop: target.offset().top - 75 //offset height of header here too.
+			}, 1000);
+			return false;
+			}
+			}
+			});
+
+		</script>
+		
+		<!-- Affix Script for Sidebar -->
+		<script>
+
+			$('#myaffix').affix({
+			offset: {
+			top: 60
+			, bottom: function () {
+			return (this.bottom = $('.footer').outerHeight(true))
+			}
+			}
+			})
+		
+		</script>
+	</head>
+	<body>
+		<div id="main">
+		<div class="container">
+
+			<!-- Top Nav - Mozu -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a href="#"><img src="logo-m-red-medium.png" style="margin-top: 3px;" /></a></div>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="http://www.mozu.com/mozu-professional-services"><span>Mozu Professional Services</span></a></li>
+							<li><a href="//developer.mozu.com/"><span>Mozu Dev Center</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!--Side Navigation TOC -->
+			<div class="row">
+				<div class="landing-title">
+					<h1>Title for the Guide</h1>	
+				</div>
+				<div class="col-md-3">
+					<nav class="bs-docs-sidebar">
+						<ul class="nav nav-stacked" data-spy="affix" data-offset-top="75" data-offset-bottom="175" id="myaffix">
+							<div class="side-heading">Table of Contents</div>
+							<li><a href="#section1">Section 1 title</a>
+								<ul class="nav nav-stacked">
+									<li><a href="#subsection1">SubSection1 Title</a></li>
+								</ul>
+							</li>
+							<li><a href="#section2">Section2 title</a>
+								<ul class="nav nav-stacked">
+									<li><a href="#subsection2">SubSection1 title</a></li>
+								</ul>
+							</li>
+							<li><a href="#section3">Section3 title</a></li>
+						</ul>
+					</nav>
+				</div>
+                    
+				<div class="col-md-9 content">
+					<!-- Documentation content -->
+					<section id="section1">
+						<h2>Section 1 - title</h2>
+						<p>Content for this section. This is the first header in your TOC on the sidebar! Change the ID in code to match the id you link to in the sidebar TOC.</p>
+						<ul>
+							<li>Line items</li>
+							<li>Line items</li>
+						</ul>
+						<p><b>Usage notes!</b></p>
+						<p>When inserting an image, use the class="img-mozu" for 75% size and responsive. Sections with ids are used for first level TOC headings. Sub sections as h3 and h4 are for nested sections. IDs are in those h3/h4s. The TOC supports only 2 levels, section with h2, and h3 in the list. Landing-title is the H1 with a different class name. Do not change the containers, scripts, etc. This file is not meant for compiling into the online help. It is strictly for standalone usage. Originally for app help for Integrations, feel free to use this long page design for any of your needs.</p>
+						<h3 id="sucsection1">SubSection1 title</h3>
+						<p>Content, enter your doc here. This is the first nested header in Section 1. Change the ID in code to match the id you link to in the TOC.</p>
+						<ul>
+							<li>Line item</li>
+							<li>Line item</li>
+						</ul>
+					</section>
+					<section id="section2">				
+						<h2>Section 2 - title</h2>
+						<ol>
+							<li>Procedures</li>
+							<li>Procedures</li>
+							<li>Procedures</li>
+						</ol>
+												 
+						<h3 id="subsection1">SubSection1 title</h3>
+						<ol>
+							<li>Procedures</li>
+							<li>Procedures</li>
+							<li>Procedures</li>
+						</ol>
+					</section>
+					<section id="section3">
+						<h2>Section3 title</h2>
+						<p>Content here. Change the id in code in the section id and the toc.</p>
+						<ol>
+							<li>Procedures</li>
+						</ol>
+					</section>
+				</div>
+			</div>
+		</div>
+        </div>  
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="footer__logo">
+							<a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+						</div>
+					</div>
+					<div class="col-md-6 text-center"></div>
+					<div class="col-md-3">
+						<p class="pull-right footer__icons"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Back to top -->
+		<div class="scroll-top-wrapper ">
+			<span class="scroll-top-inner">
+				<i class="fa fa-2x fa-arrow-circle-up"></i>
+			</span>
+		</div>
+		<!-- Back to top - show hide -->
+		<script>
+ 
+			$(function(){
+	 
+			$(document).on( 'scroll', function(){
+	 
+			if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+			} else {
+			$('.scroll-top-wrapper').removeClass('show');
+			}
+			});
+			});
+		</script>
+		<!-- Back to top - to top -->
+		<script>
+ 
+			$(function(){
+	 
+			$(document).on( 'scroll', function(){
+	 
+			if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+			} else {
+			$('.scroll-top-wrapper').removeClass('show');
+			}
+			});
+	 
+			$('.scroll-top-wrapper').on('click', scrollToTop);
+			});
+	 
+			function scrollToTop() {
+			verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+			element = $('body');
+			offset = element.offset();
+			offsetTop = offset.top;
+			$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+			}
+		</script>
+
+	</body>
+</html>

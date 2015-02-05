@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- This is the main flarestrap for the general content masterpage. -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>Getting Started with Mozu Dev Center</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button><a class="navbar-brand" href="#"> <img src="../Resources/Images/icon_mozu_red_m.png" style="margin-top: -9px;" /></a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown" value="1"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="#">Dev Center</a>
+                                    </li>
+                                    <li value="2"><a href="#">Guide 2</a>
+                                    </li>
+                                    <li value="3"><a href="#">Guide 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="2"><a href="#">App Dev</a>
+                            </li>
+                            <li value="3"><a href="#">Theme Dev</a>
+                            </li>
+                            <li value="4"><a href="#">Mozu API</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <!-- Flare topic compiler -->
+            <div class="row">
+                <div class="landing-title">
+                    <h1>Getting Started with Mozu Dev Center</h1>
+                </div>
+                <!-- Side Navigation TOC - Edit to match H2 (section) and H3, no deeper unless absolutely necessary -->
+                <div class="col-sm-3">
+                    <nav class="bs-docs-sidebar">
+                        <ul class="nav nav-stacked">
+                            <div class="side-heading">Table of Contents</div>
+                            <li value="2"><a href="#what">What is Dev Center?</a>
+                            </li>
+                            <li value="3"><a href="#workflow">Dev Center Workflow</a>
+                            </li>
+                            <li value="4"><a href="#Step1">Configure Account Information</a>
+                            </li>
+                            <li value="5"><a href="#Step2">Assign Roles and Define Users</a>
+                                <ul class="nav nav-stacked">
+                                    <li value="1"><a href="#Define">Assign Roles</a>
+                                    </li>
+                                    <li value="2"><a href="#Invite">Invite Users</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="6"><a href="#Step3">Develop Applications and Themes</a>
+                                <ul class="nav nav-stacked">
+                                    <li value="1"><a href="#What2">What Are Applications?</a>
+                                    </li>
+                                    <li value="2"><a href="#What3">What Are Themes?</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="7"><a href="#Step4">Test Your Work in Sandboxes</a>
+                                <ul class="nav nav-stacked">
+                                    <li value="1"><a href="#Provisio">Provision a Sandbox</a>
+                                    </li>
+                                    <li value="2"><a href="#Modify">Modify a Sandbox</a>
+                                    </li>
+                                    <li value="3"><a href="#View">View a Sandbox</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="8"><a href="#Certify">Certify and Install Applications and Themes</a>
+                            </li>
+                            <li value="9"><a href="#Step5">Consider Creating a Project</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-9 content">
+                    <!-- Documentation content - All H2 in a section that surrounds entire section including H3 and H4s. IDs required in section and H3 to match TOC -->
+                    <section id="what">
+                        <h2>What is Dev Center?</h2>
+                        <p>Mozu is an enterprise ecommerce platform giving you the power to manage your commerce, content, and customer experience across every channel on any device around the world. It's built with an API-first approach that enables limitless customization and extensibility.</p>
+                        <p>The Mozu platform contains two main components: Dev Center and Admin.</p>
+                        <p>Mozu <span class="VariablesDevCenter">Dev Center</span> is an online developer portal where you manage developer accounts, create applications and themes, and test your work in sandboxes.</p>
+                        <p>Mozu Dev Center includes the following components:</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tenant</td>
+                                    <td>Your client account that virtually partitions all Mozu data, configration, and operations for your organization.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sandbox Tenant</td>
+                                    <td>A tenant used exclusively for development purposes, such as testing applications and theme appearance.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://developer.mozu.com/api">Mozu API</a>
+                                    </td>
+                                    <td>Multi-tenant REST service that exposes all Mozu Platform Resources and operations.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://developer.mozu.com/tools">Mozu SDKs</a>
+                                    </td>
+                                    <td>These SDKs expose the complete functionality of the Mozu REST&#160;API, plus some additional productivity enhancements.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://developer.mozu.com/learn">Mozu Dev Center Help</a>
+                                    </td>
+                                    <td>Help content includes step-by-step instructions and best practices.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://developer.mozu.com/forum">Mozu Forums</a>
+                                    </td>
+                                    <td>Sign up to be part of the Mozu development community!</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://developer.mozu.com/contact/support">Mozu Support</a>
+                                    </td>
+                                    <td>Can't find what you need? Let us know.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section id="workflow">
+                        <p>Watch the <b>Dev Center Overview</b> <a href="http://developer.mozu.com/learn/help-videos">video</a> or dive right in to development:</p>
+                        <ol>
+                            <li value="1">Select <b>Console</b> in <a href="http://developer.mozu.com/">developer.mozu.com</a> to access <span class="VariablesDevCenter">Dev Center</span>.</li>
+                            <li value="2"><a href="#Step1">Configure account information</a>
+                            </li>
+                            <li value="3"><a href="#Step2">Assign roles and invite users</a>
+                            </li>
+                            <li value="4"><a href="#Step3">Develop applications and themes</a>
+                            </li>
+                            <li value="5"><a href="#Step4">Test your work in sandboxes</a>
+                            </li>
+                            <li value="6"><a href="#Certify">Certify and install your applications and themes</a>
+                            </li>
+                            <li value="7"><a href="#Step5">Consider creating a project</a>
+                            </li>
+                        </ol>
+                    </section>
+                    <section id="Step1">
+                        <p>After Mozu provisions your account, you receive a Developer Account invitation. The person who receives this email invitation is the Developer Account Owner by default. If you've already configured your account, skip ahead to <a href="#Step2">defining users and roles</a>.</p>
+                        <p>The Developer Account owner should configure the account information and define users before your team begins development.</p>
+                        <ol>
+                            <li value="1">Log in to Mozu Dev Center and select <b>Console</b>.</li>
+                            <li value="2">Select <b>Settings&gt;Account Information</b>.</li>
+                            <li value="3">Add your contact information and click <b>Save</b>.</li>
+                        </ol>
+                    </section>
+                    <section id="Step2">
+                        <h2>Assign  Roles and Invite Users</h2>
+                        <p>The Developer Account owner has administrative rights to the account and can:</p>
+                        <ul>
+                            <li value="1">Assign User Roles</li>
+                            <li value="2">Invite Users</li>
+                        </ul>
+                        <h3 id="Define">Assign Roles</h3>
+                        <p>You should consider what role a user needs before inviting them to your Dev Center account. If you've already determined your users and their roles, skip ahead to <a href="#Step3">developing applications and themes</a>.</p>
+                        <p>A role is a collection of permissions that defines what a user can do. A user can have different roles in multiple developer accounts, but the user can only perform the behaviors of the role associated within that specific account. For example, in Dev Account A, if you define Brenda as a Lead Developer, but in Dev Account B, you define Brenda as a Marketer, she cannot perform the marketing role in Dev Account A. Behaviors within a role are predefined, so users cannot add or remove behaviors from a role.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Role</th>
+                                    <th>Tips about each role</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Dev Account Owner</td>
+                                    <td>Dev Account owners can Invite users and perform all CRUD operations on projects.</td>
+                                </tr>
+                                <tr>
+                                    <td>Lead Developer</td>
+                                    <td>Lead Developers can invite users.</td>
+                                </tr>
+                                <tr>
+                                    <td>Developer</td>
+                                    <td>Developers cannot delete projects.</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketer</td>
+                                    <td>Marketers have read-only access to projects.</td>
+                                </tr>
+                                <tr>
+                                    <td>Project Manager</td>
+                                    <td>Project Managers can invite users and perform all CRUD operations on projects.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 id="invite">Invite Users</h3>
+                        <p>Now that you know who needs access and what their roles will be, you can invite users to your account.</p>
+                        <ol>
+                            <li value="1">Select <b>Settings&gt;Users</b>.</li>
+                            <li value="2">Enter the user’s email address and assign a role to the user. The invitation sends an email to the specified recipient with a confirmation link, and the invitation remains in pending status until the recipient confirms or declines the invitation.</li>
+                            <li value="3">For new users, Mozu directs them to a Dev Center registration page. For users who are already associated with an account, they can log in and begin working in Console.</li>
+                        </ol>
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><b>Tip</b>: Select the Gear icon under the Actions column to edit or delete a user.</div>
+                        </div>
+                    </section>
+                    <section id="Step3">
+                        <h2>Develop Applications and Themes</h2>
+                        <p>Now that your development team has access to Mozu Dev Center and their roles are defined, they can begin developing applications and themes. If you've already developed themes and applications and are ready to test them, skip ahead to <a href="#Step4">sandboxes</a>.</p>
+                        <h3 id="What2">What are applications?</h3>
+                        <p>Applications extend or override Mozu functionality with external systems to provide more specialized functions for your site. You create applications for these reasons:</p>
+                        <ul>
+                            <li value="1">You want to replace Mozu functionality with alternate functionality.</li>
+                            <li value="2">You want to integrate with third-party systems.</li>
+                            <li value="3">You want to capture additional information.</li>
+                        </ul>
+                        <p>For example, you could create an application that listens for a return event and sends an email notification when the return event occurs. Or, you could create an application that replaces the Mozu tax calculator with a third-party tax calculator, such as Avalara's tax calculator. Visit our <a href="http://volusion.github.io/documentation/Avalara/Mozu_Avalara_App.htm" target="_new">Avalara Application Configuration Guide</a> to learn more about this application.</p>
+                        <p>Applications that extend Mozu functionality are typically event based or asynchronous in nature and they can have multiple versions with behaviors, attributes, events, and capabilities specific to each version.</p>
+                        <p>You build applications in Dev Center, test them in Mozu sandboxes, and install and configure them for use in production tenants.</p>
+                        <p>Visit <a href="http://developer.mozu.com/learn/application-development">Application Development</a> to learn more about creating and working with applications.</p>
+                        <h3 id="What3">What are themes?</h3>
+                        <p>Themes determine the look and feel of a Mozu store. They alter how page sections or entire web pages display by affecting the colors, typography, typesetting, images, and other page formatting elements. A theme developer has almost total control over the appearance of a Mozu store, down to every line of HTML.		</p>
+                        <p>You build themes with a mixture of work in Dev Center and your favorite development tools, test them in Mozu sandboxes, and install and configure them for use in production tenants.</p>
+                        <p>Visit <a href="http://developer.mozu.com/learn/theme-development">Themes Portal</a> to learn more about creating and working with themes.</p>
+                    </section>
+                    <section id="Step4">
+                        <h2>Test Your Work in Sandboxes</h2>
+                        <p>To test the work you’ve done creating applications and themes, you provision a sandbox. A sandbox simulates a Mozu production tenant but is used exclusively for testing and is maintained separately from Mozu production tenants. There is no limit to the number of sandboxes you can create. If you've already worked with sandboxes, skip ahead to <a href="#Step5">projects</a>. Use this section to understand how to provision, modify, and view a Sandbox.</p>
+                        <h3 id="Provisio">Provision a Sandbox</h3>
+                        <ol>
+                            <li value="1">In the <span class="VariablesDevCenter">Dev Center</span> Console, click <b><span class="VariablesConsoleUISandbox">Sandbox</span></b>.</li>
+                            <li value="2">Click <b>Create <span class="VariablesConsoleUISandbox">Sandbox</span></b>. </li>
+                            <li value="3">In the <b>New <span class="VariablesConsoleUISandbox">Sandbox</span></b> dialog box, enter a name.</li>
+                            <li value="4">The type of template you select depends on the type of testing you need to conduct:
+						<ul><li value="1">To quickly test in an environment with a set of Mozu pre-defined master catalogs, catalogs, and sites already set up, select a Mozu-supplied template, displayed in blue in the template drop-down list.</li><li value="2">To quickly test based on one of your existing sandboxes, select it from the template list, displayed in black in the template drop-down list. </li><li value="3">To build out your own master catalog, catalogs, and sites, start with a blank environment by selecting None from the template drop-down list. </li></ul></li>
+                            <li value="5">Select the location code and currency code for the site's catalog.</li>
+                            <li value="6">Click <span class="ui">Save</span>.</li>
+                        </ol>
+                        <h3 id="Modify">Modify a Sandbox</h3>
+                        <p>Now that you have provisioned your Sandbox, you can modify it to your testing needs:</p>
+                        <p>Select your Sandbox and click the <b>Gear</b> icon. Select <b>Edit</b>. </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Action</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Invite users</td>
+                                    <td>You can only invite users who are within your developer account. The actions users can perform in the Sandbox are based on their pre-defined Dev Center roles. </td>
+                                </tr>
+                                <tr>
+                                    <td>Add or remove catalogs</td>
+                                    <td>You cannot delete a Master catalog.</td>
+                                </tr>
+                                <tr>
+                                    <td>Add a site</td>
+                                    <td>You must have a master catalog and one or more catalogs created to add a site. You can add a storefront site, which is a site were shoppers interact with products on a Mozu-hosted website using the web, a mobile device, or a kiosk. A non-storefront site is any non-Mozu hosted website such as a physical storefront or third-party website such as Amazon. </td>
+                                </tr>
+                                <tr>
+                                    <td>Install applications and themes</td>
+                                    <td>You must enable your application for it to work, and you must upload your theme files to Dev Center before installing your theme.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><b>Tip</b>: When you're working in the Sandbox Editor, select the Gear icon and click <b>Refresh</b> if the catalog or site you've added doesn't appear.</p>
+                        <h3 id="View">View a Sandbox</h3>
+                        <ol>
+                            <li value="1">In the <span class="VariablesDevCenter">Dev Center</span> Console, click<b> <span class="VariablesConsoleUISandbox">Sandbox</span></b>.</li>
+                            <li value="2">In the <b><span class="VariablesSandboxes">Sandboxes</span></b> grid, right-click the <span class="Variablessandbox">sandbox</span>  and select <b>View</b>.</li>
+                            <li value="3">If prompted by the login window, log in to Mozu Admin.</li>
+                        </ol>
+                        <p>When you open this link, it opens an instance of Mozu Admin within your <span class="Variablessandbox">sandbox</span>. For theme development, go to Mozu Admin Site Builder to apply, preview, and publish your theme content within your <span class="Variablessandbox">sandbox</span>. For application development, go to the menu item associated with your application's function.</p>
+                    </section>
+                    <section id="Certify">
+                        <h2>Certify and Install Applications and Themes</h2>
+                        <p>Now that you've tested your applications and themes, it's time to get them certified and installed on production tenants. </p>
+                        <h3>Certify Applications and Themes</h3>
+                        <p>Mozu requires all applications and themes go through our certification process before they are eligible to install into a production tenant.</p>
+                        <ol>
+                            <li value="1">Prepare your theme or application for certification. For applications, you must complete a certification form following the set guidelines in the <a href="http://mozu.github.io/IntegrationDocuments/Mozu-App-Certification-Guide.pdf">Mozu App Certification&#160;Guide for Third Party Development</a>. The guide includes the entire submission and review process, guidelines for app development, and required information expected in documentation for the app.</li>
+                            <li value="2">In the <span class="VariablesDevCenter">Dev Center</span> Console, click <b><span class="VariablesConsoleUIThemes">Develop &gt; Themes</span></b> or <b><span class="VariablesConsoleUIApps">Develop &gt; Applications</span></b>.</li>
+                            <li value="3">In the <b>Theme</b> or <b>Application </b>grid, double-click the theme or application you want to submit for certification.</li>
+                            <li value="4" data-mc-conditions="Default.R4 deprecated">Click <b>Certify</b>.</li>
+                            <li value="5" data-mc-conditions="Default.R5">In the <b>Application</b> or <b>Theme </b>menu, select <b>More &gt; Submit for certification</b>.</li>
+                            <li value="6">In the <b>Certify</b> dialog box, when you are ready to lock this version and make no further edits to it, click <b>Submit for Certification</b>.</li>
+                        </ol>
+                        <div class="panel panel-info">
+                            <div class="panel-heading"><b>Note</b>: When you submit your application or theme, the application or theme version is locked. You cannot modify this version once you submit it. If you have questions about the certification process, please consult with your Mozu Account Executive or your Partner Manager.</div>
+                        </div>
+                        <h3>Install Applications and Themes</h3>
+                        <p>Once Mozu certifies your applications and themes, the next step is for Mozu to install them on production tenants. Consult your Mozu Account Executive or your Partner Manager for this step.</p>
+                    </section>
+                    <section id="Step5">
+                        <h2>Consider Creating a Project</h2>
+                        <p>Projects are optional, but Mozu recommends you create them to group all sandboxes, applications, themes, and team members associated with a particular body of work. Having one location to view the items associated with a project makes managing the project easier. If you are Mozu Partner, we strongly recommend you create a project per each of your clients.</p>
+                        <p>Select <b>Projects&gt;Create Project</b> to start a new project, and use the Gear icon to edit or delete an existing Project.</p>
+                        <p>	You can define the parameters of your work and the members of your team on the main Project page. On the left, you can create or add existing Sandboxes, Applications, and Themes.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="pull-left footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                </div>
+                <div class="pull-right footer__icons" style="padding-right:40px;"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+        </script>
+        <!-- Scrollspy active link script for Affix - DO NOT EDIT -->
+        <script>/* <![CDATA[ */
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		/* ]]> */</script>
+        <!-- Affix for TOC - DO NOT EDIT -->
+        <script src="../Resources/Javascript/affix-dynamic.js">
+        </script>
+        <!-- Anchor Ease Script - DO NOT EDIT -->
+        <script src="../Resources/Javascript/anchor-ease.js">
+        </script>
+    </body>
+</html>
