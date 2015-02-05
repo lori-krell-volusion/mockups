@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- This is the main flarestrap for the general content masterpage. -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mozu" />
+        <link rel="shortcut icon" href="http://developer.mozu.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" /><title>Title of Entire Page</title>
+        <!-- Mozu CSS -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <style>
+			html {
+			mc-master-page: url(../Resources/Masterpages/video-long-page.flmsp);
+			}
+		</style>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/mozu-bootswatch.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- <MadCap:snippetBlock src="bootstrapsource/bootstrap-navigation.flsnp" />	-->
+            <!-- Flare topic compiler -->
+            <nav class="navbar navbar-default navbar-fixed-top navbar-collapse" style="height: 365px;">
+                <div class="container">
+                    <div id="videodiv">
+                        <p class="text-center"><iframe src="http://fast.wistia.net/embed/iframe/k4g3mya097" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1" oallowfullscreen="1" msallowfullscreen="1" width="640" height="360"></iframe>
+                            <script src="http://fast.wistia.net/assets/external/E-v1.js">
+                            </script>
+                        </p>
+                    </div>
+                </div>
+            </nav>
+            <div class="row" style="margin-top: 350px;">
+                <div class="landing-title">
+                    <h1>Title of Entire Page</h1>
+                </div>
+                <!-- Side Navigation TOC - Edit to match H2 (section) and H3, no deeper unless absolutely necessary -->
+                <div class="col-sm-3">
+                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="30">
+                        <ul class="nav nav-stacked">
+                            <div class="side-heading">Table of Contents</div>
+                            <li value="2"><a href="#section1">Section 1 title</a>
+                                <ul class="nav nav-stacked">
+                                    <li value="1"><a href="#subsection1">SubSection1 Title</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="3"><a href="#section2">Section2 title</a>
+                                <ul class="nav nav-stacked">
+                                    <li value="1"><a href="#subsection2">SubSection1 title</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="4"><a href="#section3">Section3 title</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-9 content">
+                    <!-- Documentation content - All H2 in a section that surrounds entire section including H3 and H4s. IDs required in section and H3 to match TOC -->
+                    <section id="section1">
+                        <h2>Section 1 - title</h2>
+                        <p>Content for this section. This is the first header in your TOC on the sidebar! Change the ID in code to match the id you link to in the sidebar TOC.</p>
+                        <ul>
+                            <li value="1">Line items</li>
+                            <li value="2">Line items</li>
+                        </ul>
+                        <p><b>Usage notes!</b>
+                        </p>
+                        <p>When inserting an image, use the class="img-mozu" for 75% size and responsive. Sections with ids are used for first level TOC headings. Sub sections as h3 and h4 are for nested sections. IDs are in those h3/h4s. The TOC supports only 2 levels, section with h2, and h3 in the list. Landing-title is the H1 with a different class name. Do not change the containers, scripts, etc. This file is not meant for compiling into the online help. It is strictly for standalone usage. Originally for app help for Integrations, feel free to use this long page design for any of your needs.</p>
+                        <h3 id="subsection1">SubSection1 title</h3>
+                        <p>You can copy and paste this code multiple times. Make sure to edit the ids to match TOC.</p>
+                        <ul>
+                            <li value="1">Line item</li>
+                            <li value="2">Line item</li>
+                        </ul>
+                    </section>
+                    <section id="section2">
+                        <h2>Section 2 - title</h2>
+                        <ol>
+                            <li value="1">Procedures</li>
+                            <li value="2">Procedures</li>
+                            <li value="3">Procedures</li>
+                        </ol>
+                        <div id="subsection2">
+                            <h3>SubSection2 title</h3>
+                        </div>
+                        <p>You can copy and paste this code multiple times. Make sure to edit the ids to match TOC.</p>
+                        <ol>
+                            <li value="1">Procedures</li>
+                            <li value="2">Procedures</li>
+                            <li value="3">Procedures</li>
+                        </ol>
+                    </section>
+                    <section id="section3">
+                        <h2>Section3 title</h2>
+                        <p>Content here. Change the id in code in the section id and the toc.</p>
+                        <ol>
+                            <li value="1">Procedures</li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- Mozu Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="pull-left footer__logo"><a href="http://www.mozu.com" target="_blank"><img src="http://www.mozu.com/sites/all/themes/mozu_aurora/logo.png" style="padding-top: 7px;" /></a>
+                </div>
+                <div class="pull-right footer__icons" style="padding-right:40px;"><a href="https://twitter.com/MozuCommerce"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="http://developer.mozu.com/tools" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-code-fork"></i></button></a><a href="http://www.mozu.com/contact"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-comments-o"></i></button></a><a href="http://www.mozu.com/legal"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-copyright"></i></button></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Required for Scrollspy/Affix/Bootstrap -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.js">
+        </script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/affix.js">
+        </script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+        </script>
+        <!-- Affix for TOC - DO NOT EDIT 
+		<script src="../Javascript/affix-dynamic.js"></script>-->
+        <!-- Scrollspy active link script for Affix - DO NOT EDIT -->
+        <script>/* <![CDATA[ */
+			$( document ).ready(function() {
+			$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 20
+			});
+			}); 
+		/* ]]> */</script>
+        <!-- Anchor Ease Script - DO NOT EDIT -->
+        <script src="../Resources/Javascript/anchor-ease.js">
+        </script>
+    </body>
+</html>
