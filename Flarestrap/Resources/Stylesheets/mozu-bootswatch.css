@@ -3475,6 +3475,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default {
 	background:rgba(255,255,255,0.90);
 	border-color: #bbbebf;
+	border-bottom: 1px;
 }
 .navbar-default .navbar-brand {
 	color: #df3018;
@@ -5694,6 +5695,7 @@ a:hover, a:focus {
 
 #main .content a {
 	border-bottom: 1px solid #bbbebf;
+	z-index: 5;
 }
 
 #main .content a:hover {
@@ -5945,6 +5947,25 @@ nav#sidebar .toggler {
 	color: #ffffff;
 }
 
+.header__icons {
+	margin-top: 60px;
+}
+
+.header__icons .btn-primary {
+	margin-left: 5px;
+}
+
+.header__icons .btn-primary {
+	background-color: transparent;
+	border: 0px;
+	color: #000000;
+}
+
+.header__icons .btn-primary:hover, .header__icons .btn-primary:focus, .header__icons .btn-primary:active, .header__icons .btn-primary.active {
+	background-color: #871D0F;
+	border-color: #871D0F;
+	color: #ffffff;
+}
 
 /*  Flare styles */
 
@@ -6087,22 +6108,40 @@ img.screenshot {
 	.affix-top {
 	 position: static !important;
 	}
+	#sidebar.affix {
+	position: static !important;
+	top: 0;}
+	
+	#sidebar.affix-top {
+	position: static !important;
+	}
+}
+	
 }
 
 /*  Affix for video div */
-#videodiv.affix {
+#sidebar.affix2 {
 	position: fixed;
 	top: 50px !important;
 }
 #sidebar.affix {
 	position: fixed;
-	top: 410px !important;
+	top: 460px !important;
+}
+
+#sidebar.affix-bottom {
+	position: absolute;
+}
+#sidebar.affix-top {
+	position: absolute;
 }
 
 #videodiv {
- margin-top: 3px;
+ margin-top: 50px;
  width: 100%;
- height: 365 px;
+ position: fixed;
+ background:rgba(255,255,255,0.90);
+ z-index: 10;
 }
 
 /* Back to top button */

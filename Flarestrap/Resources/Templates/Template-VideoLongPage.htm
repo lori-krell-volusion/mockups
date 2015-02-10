@@ -18,7 +18,7 @@
         <!-- Insert Google Analytics Here -->
         <style>
 			html {
-			mc-master-page: url(../Masterpages/single-long-page.flmsp);
+			mc-master-page: url(../Masterpages/video-long-page.flmsp);
 			}
 		</style>
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
@@ -75,10 +75,17 @@
                 <div class="container"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
             </nav>
-            <!-- Flare topic compiler -->
-            <div id="videodiv">
-                <p>Add your video embed here.</p>
-            </div>
+        </div>
+        <!-- Flare topic compiler -->
+        <div id="videodiv" class="container-full">
+            <div id="uniquename" style="display:block;">
+                <p class="text-center"><iframe src="http://fast.wistia.net/embed/iframe/k4g3mya097" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen="1" mozallowfullscreen="1" webkitallowfullscreen="1" oallowfullscreen="1" msallowfullscreen="1" width="640" height="360"></iframe>
+                    <script src="http://fast.wistia.net/assets/external/E-v1.js">
+                    </script>
+                </p>
+            </div><a href="javascript:ReverseDisplay('uniquename')">Click to show/hide.</a>
+        </div>
+        <div id="doc" class="container" style="margin-top: 400px;">
             <div class="row">
                 <div class="landing-title">
                     <h1>Title of Entire Page</h1>
@@ -151,6 +158,35 @@
                 </div>
             </div>
         </div>
+        <!-- Show/Hide Video Div -->
+        <script type="text/javascript" language="JavaScript">/* <![CDATA[ */
+			var theDoc = document.getElementById("doc");
+			var ShowButton = document.getElementById("show");
+			
+			function HideContent(d) {
+			document.getElementById(d).style.display = "none";
+			theDoc.style.marginTop = 'auto';
+			ShowButton.style.display = "block";
+			}
+			function ShowContent(d) {
+			document.getElementById(d).style.display = "block";
+			theDoc.style.marginTop = '400px';
+			ShowButton.style.display = "none";
+			}
+			
+			function ReverseDisplay(d) {
+			
+			if(document.getElementById(d).style.display == "none") { 		
+			document.getElementById(d).style.display = "block";
+			theDoc.style.marginTop = '400px';
+			ShowButton.style.display = "none"; }
+			
+			else { 
+			document.getElementById(d).style.display = "none";
+			theDoc.style.marginTop = 'auto';
+			ShowButton.style.display = "block";}
+			}
+		/* ]]> */</script>
         <!-- Mozu Footer -->
         <footer class="footer">
             <div class="container">
@@ -169,18 +205,17 @@
         </script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
         </script>
+        <!-- Affix for TOC - DO NOT EDIT 
+		<script src="../Javascript/affix-dynamic.js"></script>-->
         <!-- Scrollspy active link script for Affix - DO NOT EDIT -->
         <script>/* <![CDATA[ */
 			$( document ).ready(function() {
 			$('body').scrollspy({
 			target: '.bs-docs-sidebar',
-			offset: 20
+			offset: 20 
 			});
 			}); 
 		/* ]]> */</script>
-        <!-- Affix for TOC - DO NOT EDIT -->
-        <script src="../Javascript/affix-dynamic.js">
-        </script>
         <!-- Anchor Ease Script - DO NOT EDIT -->
         <script src="../Javascript/anchor-ease.js">
         </script>
